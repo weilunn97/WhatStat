@@ -1,0 +1,367 @@
+.root {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.spinner {
+    position: absolute;
+    margin: 0 auto;
+    background-color: #555555;
+    background-size: cover;
+}
+
+.Main {
+    text-align: center;
+}
+
+.Main-button {
+    background-color: #fff;
+    border-radius: 45px;
+    border: none;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 500;
+    height: 60px;
+    letter-spacing: 2.5px;
+    margin: 1em;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    width: 190px;
+}
+
+.Main-button:hover {
+    background-color: #0e8c7f;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.8);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#Main-help-button {
+    display: none;
+}
+
+.Main-header {
+    align-items: center;
+    background-color: antiquewhite;
+    background-image: url("metric_bg/bg_home.jpg");
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.Main-divider {
+    display: inline-block;
+    height: auto;
+    width: 2em;
+}
+
+.Main-logo {
+    height: 60vmin;
+    pointer-events: none;
+}
+
+.wrap {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .Main-logo {
+        animation: Main-logo-spin infinite 20s linear;
+    }
+}
+
+#App-upload-button {
+    display: none;
+}
+
+.Metric-daterange {
+    background-color: #fff;
+    border-radius: 60px;
+    box-shadow: 0px 5px 5px rgba(256, 256, 256, 0.9);
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 3rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    width: 25rem;
+}
+
+.Metric-daterange:hover {
+    background-color: #fff;
+    box-shadow: -5px 15px 15px rgba(256, 256, 256, 0.8);
+    transform: translateY(-5px);
+}
+
+.Metric {
+    text-align: center;
+    width:98.7vw;
+    position: absolute;
+}
+
+.Metric-bg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.metric-title {
+    font-size: 0.3em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    text-transform: uppercase;
+}
+
+.left {
+    float: left;
+    margin-left: 10em;
+}
+
+.right {
+    float: left;
+    margin-left: 38.5em;
+}
+
+.circle-container:hover .circle {
+    transform: rotate3d(45, 45, 0, 180deg);
+}
+
+
+.circle-container, .circle, .front, .back {
+    height: 0px;
+    width: 0px;
+}
+
+.circle-container {
+    position: absolute;
+    margin-top: 4em;
+}
+
+.circle {
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.metric-qty {
+    font-size: 4rem;
+    margin-top: 1em;
+    letter-spacing: 5px;
+}
+
+.metric-title {
+    font-size: 1rem;
+    margin-top: 0.2em;
+    letter-spacing: 3px;
+}
+
+.metric-comment {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    margin-top: 2em;
+    max-width: 45ch;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.C1 {
+    --circleColor: #48DBFB;
+    --qtyColor: #0F2027;
+    --titleColor: #203A43;
+    --commentColor: #2C5364;
+    background-color: var(--circleColor);
+}
+
+.C2 {
+    --circleColor: #341F97;
+    --qtyColor: #BFC531;
+    --titleColor: #FFF9A7;
+    --commentColor: #F8F0A7;
+    background-color: var(--circleColor);
+}
+
+.C3 {
+    --circleColor: #F7F1E3;
+    --qtyColor: #000428;
+    --titleColor: #000E92;
+    --commentColor: #000FFF;
+    background-color: var(--circleColor);
+}
+
+.C4 {
+    --circleColor: #FDA7DF;
+    --qtyColor: #00022A;
+    --titleColor: #050000;
+    --commentColor: #080000;
+    background-color: var(--circleColor);
+}
+
+.C5 {
+    --circleColor: #78E08F;
+    --qtyColor: #240B36;
+    --titleColor: #831432;
+    --commentColor: #C31432;
+    background-color: var(--circleColor);
+}
+
+.C6 {
+    --circleColor: #55EFC4;
+    --qtyColor: #021B79;
+    --titleColor: #040A43;
+    --commentColor: #0505E6;
+    background-color: var(--circleColor);
+}
+
+.C7 {
+    --circleColor: #F9CA24;
+    --qtyColor: #0F2027;
+    --titleColor: #103A43;
+    --commentColor: #1C5364;
+    background-color: var(--circleColor);
+}
+
+.metric-qty {
+    color: var(--qtyColor)
+}
+
+.metric-title {
+    color: var(--titleColor)
+}
+
+.metric-comment {
+    color: var(--commentColor)
+}
+
+.front, .back {
+    position: absolute;
+    opacity: 0.55;
+    backface-visibility: hidden;
+    border-radius: 23rem;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.4);
+    height: 30vw;
+    max-height: 90vh;
+    width: 30vw;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotate3d(45, 45, 0, 180deg);
+}
+
+.front p {
+    color: var(--qtyColor);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-top: 7em;
+    text-align: center;
+}
+
+/***FLIPCARDS FOR DISPLAYING THE GRAPHS***/
+.card-container {
+    height: 35rem;
+    width: 56.5rem;
+    box-shadow: 0px 0px 50px #ffa502;
+    cursor: pointer;
+    display: block;
+    left: 50%;
+    margin-top: -0.7em;
+    opacity: 100%;
+    perspective: 1000px;
+    position: absolute;
+    top: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    -webkit-perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+.card {
+    background-color: #fff;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    border-radius: 30px;;
+}
+
+.card div {
+    background: transparent;
+    border-radius: 30px;
+    height: 100%;
+    line-height: 200px;
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card .back {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+.Graphing-name {
+    margin-top: -2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+
+/***FLIPCARDS FOR DISPLAYING THE GRAPHS***/
+
+/***ACTUAL SCATTERPLOT***/
+.ScatterPlot {
+    position: absolute;
+    margin-top: 6em;
+}
+
+@keyframes Main-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
