@@ -155,6 +155,7 @@ html, body {
 }
 
 .circle {
+    cursor: pointer;
     transform-style: preserve-3d;
     transition: 0.5s;
     transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
@@ -284,14 +285,14 @@ html, body {
 
 /***FLIPCARDS FOR DISPLAYING THE GRAPHS***/
 .card-container {
-    height: 35rem;
-    width: 56.5rem;
+    background: transparent;
+    height: 90vh;
+    width: 80vw;
     box-shadow: 0px 0px 50px #ffa502;
     cursor: pointer;
     display: block;
     left: 50%;
-    margin-top: -0.7em;
-    opacity: 100%;
+    margin-top: -15vh;
     perspective: 1000px;
     position: absolute;
     top: 50%;
@@ -312,14 +313,14 @@ html, body {
     transform-style: preserve-3d;
     -webkit-transition: all 600ms;
     transition: all 600ms;
-    border-radius: 30px;;
+    border-radius: 30px;
 }
 
 .card div {
     background: transparent;
     border-radius: 30px;
     height: 100%;
-    line-height: 200px;
+    margin-top: 3vh;
     position: absolute;
     width: 100%;
     backface-visibility: hidden;
@@ -341,7 +342,7 @@ input {
 }
 
 .Graphing-name {
-    margin-top: -2rem;
+    margin-top: -5vh;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2.5px;
@@ -353,8 +354,7 @@ input {
 
 /***ACTUAL SCATTERPLOT***/
 .ScatterPlot {
-    position: absolute;
-    margin-top: 6em;
+    position: relative;
 }
 
 @keyframes Main-logo-spin {
