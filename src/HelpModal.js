@@ -1,10 +1,10 @@
 import Modali, { useModali } from "modali";
 import React from "react";
-import step1 from "./guide/step1.png";
-import step2 from "./guide/step2.png";
-import step3 from "./guide/step3.png";
-import step4 from "./guide/step4.png";
-import step5 from "./guide/step5.png";
+import step1 from "./guide/step1.jpg";
+import step2 from "./guide/step2.jpg";
+import step3 from "./guide/step3.jpg";
+import step4 from "./guide/step4.jpg";
+import step5 from "./guide/step5.jpg";
 
 const HelpModal = props => {
   const toggleHelpModalOneTwo = () => {
@@ -28,7 +28,7 @@ const HelpModal = props => {
     animated: true,
     centered: true,
     large: true,
-    title: "1. 👋👋 Choose any ONE-ON-ONE 💬 on Telegram Desktop.",
+    title: "1. 👋👋 Open up any ONE-ON-ONE 💬 on WhatsApp",
     buttons: [
       <Modali.Button isStyleDefault label=">" onClick={toggleHelpModalOneTwo} />
     ]
@@ -38,7 +38,7 @@ const HelpModal = props => {
     animated: true,
     centered: true,
     large: true,
-    title: "2. None are important, so skip them. 😉",
+    title: "2. Skip this step if you're able to see all options. 😉",
     buttons: [
       <Modali.Button
         isStyleDefault
@@ -57,7 +57,7 @@ const HelpModal = props => {
     animated: true,
     centered: true,
     large: true,
-    title: "3. Note your download 📂, and maximize the size limit.",
+    title: "3. Select the 'Export Chat' option",
     buttons: [
       <Modali.Button
         isStyleDefault
@@ -76,7 +76,7 @@ const HelpModal = props => {
     animated: true,
     centered: true,
     large: true,
-    title: "4. Well, click on it! 🤓",
+    title: "4. No media is needed here 🤓",
     buttons: [
       <Modali.Button
         isStyleDefault
@@ -96,7 +96,7 @@ const HelpModal = props => {
     centered: true,
     large: true,
     title:
-      "5. See your 'messages' file right there? Upload that and we're done! 😎",
+      "5. Send the exported text file to yourself, and press 'Upload' when you're ready! 🙂",
     buttons: [
       <Modali.Button
         isStyleDefault
