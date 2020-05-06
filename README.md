@@ -69,7 +69,6 @@ These are the key ⚒ frameworks and tools ⚒ which were used extensively durin
 ## 📸 Usage & Demo 📸
 <a href="https://whatstat-4a760.web.app/" target="_blank"><img src="readme_mockups/messages.JPG" /></a><br><br>
 <a href="https://whatstat-4a760.web.app/" target="_blank"><img src="readme_mockups/wpm.JPG" /></a><br><br>
-<a href="https://whatstat-4a760.web.app/" target="_blank"><img src="readme_mockups/stickers.JPG" /></a><br><br>
 <a href="https://whatstat-4a760.web.app/" target="_blank"><img src="readme_mockups/rt_graph.JPG" /></a><br><br>
 
 
